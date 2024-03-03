@@ -23,3 +23,4 @@ Run the installer:
 ```
 docker compose up -d
 ```
+Open browser and insert link: http://[IP OR DOMIAN]:8080
