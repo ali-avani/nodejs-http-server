@@ -1,0 +1,13 @@
+version: '3.9'
+services:
+    http-server:
+        container_name: nodejs-http-server
+        build:
+            context: .
+            args:
+                USERNAME: ${USERNAME}
+                PASSWORD: ${PASSWORD}
+        ports:
+            - 8080:8080
+        volumes:
+            - ./data:/data
